@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #ffe4e6, #e0f7fa);
+}
+
+header {
+    background: #ffffffaa;
+    text-align: center;
+    padding: 1rem;
+    backdrop-filter: blur(8px);
+}
+
+header h1 {
+    color: #ff69b4;
+}
+
+.expense-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.input-section input[type="text"],
+.input-section input[type="number"] {
+    padding: 0.5rem;
+    border: 2px solid #add8e6;
+    border-radius: 5px;
+    outline: none;
+    flex: 1 1 150px;
+}
+
+#addExpense {
+    padding: 0.5rem 1rem;
+    background: #add8e6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#addExpense:hover {
+    background: #87ceeb;
+}
+
+.summary {
+    margin-bottom: 1rem;
+    background: #ffffffcc;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+#expenseList {
+    list-style: none;
+    width: 90%;
+    max-width: 400px;
+}
+
+.expense-item {
+    background: #ffffffcc;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem;
+    border: 1px solid #ddd;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.expense-title {
+    font-weight: 500;
+}
+
+.expense-amount {
+    font-weight: bold;
+    color: #007acc;
+}
+
+.delete-btn {
+    background: #ff6b6b;
+    border: none;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background 0.3s;
+}
+
+.delete-btn:hover {
+    background: #ff4c4c;
+}
+
+footer {
+    text-align: center;
+    padding: 0.5rem;
+    background: #ffffffaa;
+    font-size: 0.9rem;
+    color: #333;
+    backdrop-filter: blur(10px);
+}
